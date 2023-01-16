@@ -25,11 +25,11 @@ byte nameBlock      = 48;                 //Block 48 stores the name as Hexadeci
 byte roleBlock      = 49;                 //Block 49 stores the role as Hexadecimal bytes
 byte trailerBlock   = 51;                 //Trailer block 51 needed for authenitication 
 
-//byte buffer[18];                          //Defined the buffer variable
-//byte size = sizeof(buffer);               //Defines the size of the buffer
+byte buffer[15];                          //Defined the buffer variable
+byte size = sizeof(buffer);               //Defines the size of the buffer
 
 void setup() {
-	 //This Initialies serial communications with the PC
+//This Initialies serial communications with the PC
   Serial.begin(9600);   
   // Does nothing if no serial port is opened
   while (!Serial);    
